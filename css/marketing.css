@@ -1,0 +1,161 @@
+h3,
+h4{
+  margin: 0px;
+}
+
+.blog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.item{
+  background-color: #f5c5a1;
+  width: 180px;
+  background-color: var(--color);
+  border-radius: 12px;
+  padding: 5px;
+  padding-top: 10px;
+  box-shadow:
+   #3c40434d 0px 1px 2px 0px,
+    #ff3030 0px 1px 3px 1px;
+  position: relative;
+  cursor: pointer;
+  color: #ff3030;
+  font-weight: bold;
+}
+
+.item::after{
+  transition: filter 0.5s;
+}
+
+.layer{
+  background-color: white;
+  border: 1px solid yellow;
+  border-radius: inherit;
+  padding: 3px;
+  box-shadow:
+   #00000012 0px 1px 2px,
+   #00000012 0px 1px 2px,
+   #00000012 0px 1px 2px,
+   #00000012 0px 1px 2px,
+   #00000012 0px 1px 2px,
+   #00000012 0px 1px 2px;
+  /* height: 238px; */
+  position: relative;
+  transform: left 1s;
+  font-weight: 600;
+}
+
+
+.item:hover:after{
+  filter: drop-shadow( 4px 0 4px black);
+  transition:all 0.5s ease;
+}
+
+
+
+
+
+.hero-section {
+  background: linear-gradient(to right, #4267B2, #29487D);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+
+/* again for social media marketing */
+h3,
+h4{
+  margin: 0px;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  line-height: 1.5rem;
+  margin-top: 40px;
+}
+
+.item1{
+  --color: #51c2ba;
+  width: 180px;
+  background-color: var(--color);
+  border-radius: 10px;
+  padding: 10px 5px;
+  box-shadow:
+   #3c40434d 0px 1px 2px 0px,
+    #ff3030 0px 1px 3px 1px;
+  position: relative;
+  cursor: pointer;
+}
+
+.item1::after{
+  content: "";
+  position: absolute;
+  top:8px;
+  left: 0px;
+  z-index: 2;
+  height: 80%;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--color);
+  border-width: 40px 40px 40px 40px;
+  filter: drop-shadow(5px 0 4px #dbdbdb);
+  transform: filter .5s;
+}
+
+.layer1{
+  background-color: white;
+  border: 1px solid yellow;
+  border-radius: inherit;
+  padding: 20px;
+  box-shadow:
+   #00000012 0px 1px 2px,
+   #00000012 0px 1px 2px,
+   #00000012 0px 1px 2px,
+   #00000012 0px 1px 2px,
+   #00000012 0px 1px 2px,
+   #00000012 0px 1px 2px;
+  height: 270px;
+  position: relative;
+  left: 10px;
+  transform: left 1s;
+  font-weight: 600;
+}
+
+ 
+h4{
+  font-weight: 800;
+  text-align: center;
+  color: red !important;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.item1:hover:after{
+  filter: drop-shadow( 4px 0 4px black);
+  transition:all 0.5s ease;
+}
+
+.item1:hover .layer1{
+  left: 30px;
+  transition:all 0.5s ease;
+}
+
+
+
+
+
+
+.hero-section {
+  background: linear-gradient(to right, #4267B2, #29487D);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
